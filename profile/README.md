@@ -41,7 +41,7 @@ We are opening up parts of the platform that are useful on their own.
 | Repository | What it is |
 |---|---|
 | [**molecare-mcp**](https://github.com/MoleCare/molecare-mcp) | MCP server exposing educational dermatology knowledge, MoleCare API tools, and MLOps operations tooling to Claude and other MCP clients — Apache-2.0 |
-| **MoleCare-ML** | The TensorFlow melanoma classification service and the training notebooks behind it — Apache-2.0, *publishing shortly* |
+| [**molecare-ml**](https://github.com/MoleCare/molecare-ml) | The TensorFlow melanoma classification service and the training notebooks behind it — Apache-2.0 |
 
 Contributions are welcome. Each repository carries a contributing guide, and anything touching
 model behaviour is held to the clinical-safety rules described there.
@@ -58,8 +58,10 @@ The classifiers here are trained on openly licensed dermoscopic imagery from the
 comparisons behind our architecture choices can be inspected and challenged.
 
 The most valuable open problem in this space is **performance across Fitzpatrick skin types** —
-dermoscopic datasets are not evenly representative, and models trained on them inherit that.
-Contributions on bias evaluation are especially welcome.
+dermoscopic datasets are not evenly representative, and models trained on them inherit that. Our
+model card says so plainly: that performance is currently **unmeasured**. It is tracked as
+[an open issue](https://github.com/MoleCare/molecare-ml/issues/10), and contributions there are
+especially welcome — including ones that show the model performing badly.
 
 ## Get in touch
 
