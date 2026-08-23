@@ -1,8 +1,7 @@
 <h1 align="center">MoleCare</h1>
 
 <p align="center">
-  <strong>Skin health self-management — monitor moles and skin lesions over time.</strong><br>
-  Listed on the <strong>NHS App Library</strong>.
+  <strong>Skin health self-management — monitor moles and skin lesions over time.</strong>
 </p>
 
 <p align="center">
