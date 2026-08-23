@@ -40,10 +40,16 @@ We are opening up parts of the platform that are useful on their own.
 
 | Repository | What it is |
 |---|---|
-| **MoleCare-ML** | The TensorFlow melanoma classification service and the training notebooks behind it — Apache-2.0 |
+| [**molecare-mcp**](https://github.com/MoleCare/molecare-mcp) | MCP server exposing educational dermatology knowledge, MoleCare API tools, and MLOps operations tooling to Claude and other MCP clients — Apache-2.0 |
+| **MoleCare-ML** | The TensorFlow melanoma classification service and the training notebooks behind it — Apache-2.0, *publishing shortly* |
 
 Contributions are welcome. Each repository carries a contributing guide, and anything touching
 model behaviour is held to the clinical-safety rules described there.
+
+**New here?** `molecare-mcp` is the easiest place to start — it runs locally with no
+credentials, no database, and no AWS account. Issues tagged
+[`good first issue`](https://github.com/MoleCare/molecare-mcp/labels/good%20first%20issue)
+are scoped so you do not need context on the wider platform.
 
 ## Research
 
