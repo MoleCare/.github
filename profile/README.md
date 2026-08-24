@@ -42,6 +42,7 @@ We are opening up parts of the platform that are useful on their own.
 |---|---|
 | [**molecare-mcp**](https://github.com/MoleCare/molecare-mcp) | MCP server exposing educational dermatology knowledge, MoleCare API tools, and MLOps operations tooling to Claude and other MCP clients — Apache-2.0 |
 | [**molecare-ml**](https://github.com/MoleCare/molecare-ml) | The TensorFlow melanoma classification service and the training notebooks behind it — Apache-2.0 |
+| [**molecare-webapp**](https://github.com/MoleCare/molecare-webapp) | The React web app — where people record and compare their own photographs over time — Apache-2.0 |
 
 Contributions are welcome. Each repository carries a contributing guide, and anything touching
 model behaviour is held to the clinical-safety rules described there.
