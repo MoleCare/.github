@@ -1,0 +1,21 @@
+Party Parrot GIFs from https://cultofthepartyparrot.com
+(https://github.com/jmhobbs/cultofthepartyparrot.com).
+
+The original parrot GIF is by Geiger Powell, who gave permission for unlimited
+use and adaptation. These copies are the Slack / Discord party reactions people
+already know:
+
+  celebration.gif  mergedparrot     (merge party)
+  ship-it.gif      shipitparrot
+  nailed-it.gif    dealwithitparrot
+  nice-work.gif    thankyouparrot
+  high-five.gif    thumbsupparrot
+  cleanup.gif      fixparrot
+
+They live here, in the organisation profile repository, rather than in each
+code repository. Every MoleCare code repository refuses binary image files in
+CI — a real patient photograph once reached one of them as a base64 blob inside
+a source file, past every filename check. Keeping these here means the merge
+celebration works everywhere without any repository relaxing that rule.
+
+The celebrate-merge workflow in each repository links to the raw URLs below.
