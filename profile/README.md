@@ -43,7 +43,7 @@ We are opening up parts of the platform that are useful on their own.
 | [**molecare-mcp**](https://github.com/MoleCare/molecare-mcp) | MCP server giving Claude and other clients educational dermatology knowledge — lesion terminology, ABCDE criteria, SNOMED CT to ICD-10 mapping. Runs with no credentials. Ships `molecare-ops-mcp` alongside it for infrastructure tooling — Apache-2.0 |
 | [**molecare-ml**](https://github.com/MoleCare/molecare-ml) | The TensorFlow melanoma classification service and the training notebooks behind it — Apache-2.0 |
 | [**molecare-desktop**](https://github.com/MoleCare/molecare-desktop) | The Electron desktop app for macOS, Windows and Linux — Apache-2.0 |
-| [**skincare-qa**](https://github.com/MoleCare/skincare-qa) | A small LoRA model for educational skin-health Q&A, behind a harness that decides whether a draft answer ships — Apache-2.0 |
+| [**molecare-skin-llm**](https://github.com/MoleCare/molecare-skin-llm) | A small LoRA model for educational skin-health Q&A, behind a harness that decides whether a draft answer ships — Apache-2.0 |
 
 Contributions are welcome. Each repository carries a contributing guide, and anything touching
 model behaviour is held to the clinical-safety rules described there.
