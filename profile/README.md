@@ -68,3 +68,12 @@ especially welcome — including ones that show the model performing badly.
 ## Get in touch
 
 **info@molecare.co.uk**
+
+## Contributors
+
+Thank you to everyone who has helped.
+
+<!-- readme: contributors,bots/- -start -->
+<!-- readme: contributors,bots/- -end -->
+
+Filled from GitHub commits (bots omitted). [Action](https://github.com/YauhenBichel/readme-contributors)
