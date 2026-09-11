@@ -12,7 +12,12 @@ name: Contributors
 # profile's wall stayed empty.
 #
 # main is protected, so the wall pushes through the write deploy key stored as
-# CONTRIBUTORS_DEPLOY_KEY. `secrets: inherit` hands it over.
+# CONTRIBUTORS_DEPLOY_KEY.
+#
+# The key is passed by name, not with `secrets: inherit`: inherit only reaches
+# a reusable workflow in the same organisation, and the wall lives under
+# YauhenBichel, so inherit passed nothing and the push fell back to the
+# workflow token, which the protected branch refuses.
 
 on:
   push:
@@ -30,4 +35,5 @@ jobs:
     with:
       readme: profile/README.md
       format: html
-    secrets: inherit
+    secrets:
+      CONTRIBUTORS_DEPLOY_KEY: ${{ secrets.CONTRIBUTORS_DEPLOY_KEY }}
