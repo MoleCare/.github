@@ -1,36 +1,33 @@
 name: Contributors
 
+# The wall lives in readme-contributors as a reusable workflow and is written
+# straight to main after every merge, with no separate pull request. The
+# organisation profile keeps its README at profile/README.md, so that is the
+# file the wall fills.
+#
+# This used to be a copy of the job, and every run since 7 September failed:
+# its git add named .github/contributors.svg, which html format never writes,
+# so the step died with exit 128 before it could commit; and it pushed to a
+# protected main with the workflow token, which the ruleset refuses. The
+# profile's wall stayed empty.
+#
+# main is protected, so the wall pushes through the write deploy key stored as
+# CONTRIBUTORS_DEPLOY_KEY. `secrets: inherit` hands it over.
+
 on:
+  push:
+    branches: [main]
   schedule:
     - cron: "17 4 * * 0"
   workflow_dispatch:
-  push:
-    branches:
-      - main
 
 permissions:
   contents: write
 
 jobs:
-  readme:
-    if: github.actor != 'github-actions[bot]'
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-        with:
-          persist-credentials: true
-
-      - uses: YauhenBichel/readme-contributors@25e0b067b5edec34206283138657dc8a8713d89a # reuse captions
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          format: html
-          readme: profile/README.md
-
-      - name: Push the list
-        run: |
-          git config user.name github-actions[bot]
-          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add profile/README.md .github/contributors.svg .github/faces
-          git diff --cached --quiet && exit 0
-          git commit -m "docs: refresh README contributors"
-          git push
+  wall:
+    uses: YauhenBichel/readme-contributors/.github/workflows/wall.yml@a7a404eee356cff3be78b6aaf419916909994b60 # v1.9.0
+    with:
+      readme: profile/README.md
+      format: html
+    secrets: inherit
