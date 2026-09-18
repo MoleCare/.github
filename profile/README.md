@@ -6,6 +6,7 @@
 
 <p align="center">
   <a href="https://www.molecare.co.uk">molecare.co.uk</a> ·
+  <a href="https://www.youtube.com/@molecare">MoleCare youtube channel</a> ·
   <a href="https://apps.apple.com/us/app/molecare/id1448635328">App Store</a> ·
   <a href="https://play.google.com/store/apps/details?id=com.mymolecare">Google Play</a>
 </p>
