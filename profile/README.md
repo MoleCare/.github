@@ -44,7 +44,19 @@ We are opening up parts of the platform that are useful on their own.
 | [**molecare-mcp**](https://github.com/MoleCare/molecare-mcp) | MCP server giving Claude and other clients educational dermatology knowledge — lesion terminology, ABCDE criteria, SNOMED CT to ICD-10 mapping. Runs with no credentials. Ships `molecare-ops-mcp` alongside it for infrastructure tooling — Apache-2.0 |
 | [**molecare-ml**](https://github.com/MoleCare/molecare-ml) | The TensorFlow melanoma classification service and the training notebooks behind it — Apache-2.0 |
 | [**molecare-desktop**](https://github.com/MoleCare/molecare-desktop) | The Electron desktop app for macOS, Windows and Linux — Apache-2.0 |
-| [**skincare-qa**](https://github.com/MoleCare/skincare-qa) | A small LoRA model for educational skin-health Q&A, behind a harness that decides whether a draft answer ships — Apache-2.0 |
+| [**molecare-skin-llm**](https://github.com/MoleCare/molecare-skin-llm) | A small LoRA model for educational skin-health Q&A, behind a harness that decides whether a draft answer ships — Apache-2.0 |
+| [**privacy-gate-llm**](https://github.com/MoleCare/privacy-gate-llm) | Keeps sensitive prompts local: a tiny classifier on top of bge-m3 that catches health data, credentials and personal details written as plain English, for LLM routers and guardrails. [Try the demo](https://huggingface.co/spaces/YauhenBichel/privacy-gate-llm-demo) — Apache-2.0 |
+
+### Packages for app developers
+
+Small, dependency-light libraries taken out of the MoleCare apps, useful in any app. Each is
+stateless, has no MoleCare-specific settings, and keeps the same rule as the product: it shows
+or measures photos and data, and never judges what is in them.
+
+| Package | What it is |
+|---|---|
+| [**react-photo-compare**](https://github.com/MoleCare/react-photo-compare) | Two photos side by side with one shared zoom and pan, for React. Mouse, touch, pen and keyboard; no dependencies. [Live demo](https://molecare.github.io/react-photo-compare/) — Apache-2.0 |
+| [**rn-photo-quality**](https://github.com/MoleCare/rn-photo-quality) | On-device photo quality checks for React Native and Expo: exposure, uneven lighting, sharpness, capture details and whether two photos are comparable — Apache-2.0 |
 
 Contributions are welcome. Each repository carries a contributing guide, and anything touching
 model behaviour is held to the clinical-safety rules described there.
