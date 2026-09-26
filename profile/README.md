@@ -57,6 +57,8 @@ or measures photos and data, and never judges what is in them.
 |---|---|
 | [**react-photo-compare**](https://github.com/MoleCare/react-photo-compare) | Two photos side by side with one shared zoom and pan, for React. Mouse, touch, pen and keyboard; no dependencies. [Live demo](https://molecare.github.io/react-photo-compare/) — Apache-2.0 |
 | [**rn-photo-quality**](https://github.com/MoleCare/rn-photo-quality) | On-device photo quality checks for React Native and Expo: exposure, uneven lighting, sharpness, capture details and whether two photos are comparable — Apache-2.0 |
+| [**rn-scale-reference**](https://github.com/MoleCare/rn-scale-reference) | Turns pixels into millimetres using a coin or sticker of known size in the same photo, for React Native and Expo. Always an estimate, with the reason when a photo can't be measured — Apache-2.0 |
+| [**rn-health-data**](https://github.com/MoleCare/rn-health-data) | Reads steps, sleep, workouts, active energy and water from Apple Health and Health Connect with one API. Read-only; stores and sends nothing — Apache-2.0 |
 
 Contributions are welcome. Each repository carries a contributing guide, and anything touching
 model behaviour is held to the clinical-safety rules described there.
