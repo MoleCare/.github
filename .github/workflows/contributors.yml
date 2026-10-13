@@ -18,6 +18,10 @@ name: Contributors
 # a reusable workflow in the same organisation, and the wall lives under
 # YauhenBichel, so inherit passed nothing and the push fell back to the
 # workflow token, which the protected branch refuses.
+#
+# pull-requests: read lets the wall include people who only show up as
+# merged PR authors. The reusable workflow cannot gain that scope unless
+# the caller grants it.
 
 on:
   push:
@@ -28,10 +32,11 @@ on:
 
 permissions:
   contents: write
+  pull-requests: read
 
 jobs:
   wall:
-    uses: YauhenBichel/readme-contributors/.github/workflows/wall.yml@a7a404eee356cff3be78b6aaf419916909994b60 # v1.9.0
+    uses: YauhenBichel/readme-contributors/.github/workflows/wall.yml@3f3b442309052873cae16e7fce8a28f465a88768 # v1.9.2
     with:
       readme: profile/README.md
       format: html
