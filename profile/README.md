@@ -41,7 +41,7 @@ We are opening up parts of the platform that are useful on their own.
 
 | Repository | What it is |
 |---|---|
-| [**molecare-mcp**](https://github.com/MoleCare/molecare-mcp) | MCP server giving Claude and other clients educational dermatology knowledge — lesion terminology, ABCDE criteria, SNOMED CT to ICD-10 mapping. Runs with no credentials. Ships `molecare-ops-mcp` alongside it for infrastructure tooling — Apache-2.0 |
+| [**molecare-mcp**](https://github.com/MoleCare/molecare-mcp) | MCP server giving Claude and other clients educational dermatology knowledge — lesion terminology, ABCDE criteria, SNOMED CT to ICD-10 mapping. Runs with no credentials: `npx -y molecare-mcp`. Ships `molecare-ops-mcp` alongside it for infrastructure tooling. [On npm](https://www.npmjs.com/package/molecare-mcp) — Apache-2.0 |
 | [**molecare-ml**](https://github.com/MoleCare/molecare-ml) | The TensorFlow melanoma classification service and the training notebooks behind it — Apache-2.0 |
 | [**molecare-desktop**](https://github.com/MoleCare/molecare-desktop) | The Electron desktop app for macOS, Windows and Linux — Apache-2.0 |
 | [**molecare-skin-llm**](https://github.com/MoleCare/molecare-skin-llm) | A small LoRA model for educational skin-health Q&A, behind a harness that decides whether a draft answer ships — Apache-2.0 |
@@ -60,6 +60,16 @@ or measures photos and data, and never judges what is in them.
 | [**rn-photo-quality**](https://github.com/MoleCare/rn-photo-quality) | On-device photo quality checks for React Native and Expo: exposure, uneven lighting, sharpness, capture details and whether two photos are comparable — Apache-2.0 |
 | [**rn-scale-reference**](https://github.com/MoleCare/rn-scale-reference) | Turns pixels into millimetres using a coin or sticker of known size in the same photo, for React Native and Expo. Always an estimate, with the reason when a photo can't be measured — Apache-2.0 |
 | [**rn-health-data**](https://github.com/MoleCare/rn-health-data) | Reads steps, sleep, workouts, active energy and water from Apple Health and Health Connect with one API. Read-only; stores and sends nothing — Apache-2.0 |
+| [**rn-trace**](https://github.com/MoleCare/rn-trace) | Finds out why a tap did nothing, in React Native and React: JS-thread blocks, slow tap-to-response, repeat taps and why a component rendered again. Readable in release builds; sends spans to OpenTelemetry. No dependencies. [Live demo](https://molecare.github.io/rn-trace/) · [On npm](https://www.npmjs.com/package/@molecare/rn-trace) — Apache-2.0 |
+
+### On npm
+
+Published from GitHub Actions; versions from `@molecare/rn-trace` 0.2.0 carry npm provenance.
+
+| Package | Install |
+|---|---|
+| [![molecare-mcp on npm](https://img.shields.io/npm/v/molecare-mcp?label=molecare-mcp)](https://www.npmjs.com/package/molecare-mcp) | `npx -y molecare-mcp` |
+| [![@molecare/rn-trace on npm](https://img.shields.io/npm/v/@molecare/rn-trace?label=%40molecare%2Frn-trace)](https://www.npmjs.com/package/@molecare/rn-trace) | `npm install @molecare/rn-trace` |
 
 Contributions are welcome. Each repository carries a contributing guide, and anything touching
 model behaviour is held to the clinical-safety rules described there.
